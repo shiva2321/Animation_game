@@ -1,43 +1,24 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 """
-3D Particle Collision Generator - Enhanced Version
+Main application entry point.
 """
-
 import sys
-import os
-import warnings
+from PyQt6.QtWidgets import QApplication
+from src.ui.dashboard import MainDashboard
 
-os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
-warnings.filterwarnings('ignore')
 
 def main():
-    """Main entry point"""
-    try:
-        os.makedirs("output", exist_ok=True)
-        os.makedirs("config", exist_ok=True)
+    """Main application entry point."""
+    app = QApplication(sys.argv)
+    app.setApplicationName("Particle Video Generator")
 
-        try:
-            import pygame
-            pygame.init()
-        except:
-            pass
+    # Create and show main window
+    window = MainDashboard()
+    window.show()
 
-        from PyQt5.QtWidgets import QApplication
-        app = QApplication(sys.argv)
+    # Run application
+    sys.exit(app.exec())
 
-        from src.ui.enhanced_dashboard import EnhancedDashboard
-        dashboard = EnhancedDashboard()
-        dashboard.show()
 
-        sys.exit(app.exec_())
-
-    except Exception as e:
-        print(f"Error: {e}")
-        import traceback
-        traceback.print_exc()
-        sys.exit(1)
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
 

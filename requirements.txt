@@ -1,7 +1,27 @@
+# Particle Collision Video Generator - Windows 11
+# Python 3.11+ recommended (tested on 3.13)
+
+# UI Framework
+PyQt6>=6.6.0
+
+# Graphics & Rendering
 pygame>=2.5.2
-PyQt5>=5.15.10
-numpy>=1.24.3
-opencv-python>=4.8.1.78
-pillow>=10.1.0
+numpy>=2.0.0  # For Python 3.13+ compatibility
+
+# Audio Processing (using scipy for WAV export)
+pydub>=0.25.1
+# soundfile and mido removed - not needed for our synthesis
+# python-sounddevice removed - causes install issues, not needed
+
+# Video Export
+moviepy>=1.0.3
+imageio>=2.33.1
+imageio-ffmpeg>=0.4.9
+
+# Additional Dependencies
+Pillow>=10.1.0
 scipy>=1.11.4
 
+# Optional Performance (uncomment if needed)
+# numba==0.58.1
+pyqt6-sip
