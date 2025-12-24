@@ -1,0 +1,41 @@
+
+{
+    "seed": 202,
+    "simulation": {
+        "duration_sec": 75,
+        "resolution": [1920, 1080],
+        "quality": "export_medium"
+    },
+    "physics": {
+        "gravity_enabled": true,
+        "gravity_strength": 5.0,
+        "gravity_direction_deg": 180.0,
+        "attractor_mode": false,
+        "drag_coeff": 0.1,
+        "restitution": 0.6,
+        "brownian_enabled": true,
+        "brownian_strength": 0.8
+    },
+    "particles": {
+        "initial_count": 100,
+        "max_particles": 300,
+        "spawn_rate": 10.0,
+        "size_min": 8.0,
+        "size_max": 20.0,
+        "shapes": ["circle"]
+    },
+    "visuals": {
+        "scheme_name": "ocean",
+        "glow_toggle": true,
+        "glow_intensity": 0.6,
+        "trails_toggle": true,
+        "trails_length": 12,
+        "collision_effect_style": "ripple"
+    },
+    "audio": {
+        "instrument": "bell",
+        "scale": "pentatonic_g",
+        "reverb_enabled": true,
+        "reverb_amount": 0.8
+    }
+}

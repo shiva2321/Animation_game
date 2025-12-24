@@ -1,0 +1,6 @@
+
+PyQt5==5.15.10
+pygame==2.5.2
+numpy==1.26.4
+pydub==0.25.1
+moviepy==1.0.3

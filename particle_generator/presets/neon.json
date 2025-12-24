@@ -1,0 +1,40 @@
+
+{
+    "seed": 303,
+    "simulation": {
+        "duration_sec": 60,
+        "resolution": [1920, 1080],
+        "quality": "export_high"
+    },
+    "physics": {
+        "gravity_enabled": false,
+        "drag_coeff": 0.0,
+        "restitution": 1.0,
+        "max_speed": 1200.0,
+        "attraction_repulsion_enabled": true,
+        "attraction_strength": -0.8,
+        "attraction_radius": 200
+    },
+    "particles": {
+        "initial_count": 60,
+        "max_particles": 150,
+        "spawn_rate": 1.0,
+        "size_min": 10.0,
+        "size_max": 25.0,
+        "shapes": ["square", "triangle", "hexagon"]
+    },
+    "visuals": {
+        "scheme_name": "neon",
+        "glow_toggle": true,
+        "glow_intensity": 1.0,
+        "trails_toggle": true,
+        "trails_length": 40,
+        "boundary_style": "glow"
+    },
+    "audio": {
+        "instrument": "violin",
+        "scale": "minor_a",
+        "reverb_enabled": true,
+        "reverb_amount": 0.5
+    }
+}

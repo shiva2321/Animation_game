@@ -1,0 +1,39 @@
+
+{
+    "seed": 101,
+    "simulation": {
+        "duration_sec": 90,
+        "resolution": [1920, 1080],
+        "quality": "export_high"
+    },
+    "physics": {
+        "gravity_enabled": false,
+        "attractor_mode": true,
+        "gravity_strength": 25.0,
+        "drag_coeff": 0.01,
+        "restitution": 0.95,
+        "vortex_enabled": true,
+        "vortex_strength": 0.3
+    },
+    "particles": {
+        "initial_count": 80,
+        "max_particles": 250,
+        "spawn_rate": 2.0,
+        "size_min": 3.0,
+        "size_max": 12.0,
+        "shapes": ["circle", "star"]
+    },
+    "visuals": {
+        "scheme_name": "cosmic",
+        "glow_toggle": true,
+        "glow_intensity": 0.9,
+        "trails_toggle": true,
+        "trails_length": 30
+    },
+    "audio": {
+        "instrument": "soft_pad",
+        "scale": "japanese",
+        "reverb_enabled": true,
+        "reverb_amount": 0.7
+    }
+}
